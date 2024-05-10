@@ -1,4 +1,4 @@
-This is the PyTorch implementation for our method.
+Code for the paper [Learning Latent Dynamic Robust Representations for World Models](https://icml.cc/virtual/2024/poster/34700)
 
 ## Requirements
 
@@ -11,3 +11,4 @@ To train the model in the paper,  please download the videos labeled 'driving_ca
 ```bash
 python -u dreamer.py --configs dmc_vision  --task dmc_walker_stand_video --seed 0 --logdir ./log
 ````
+
