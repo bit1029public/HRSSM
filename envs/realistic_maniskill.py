@@ -65,7 +65,7 @@ def load_ReplicaCAD(builder):
     paths = sorted(
         list(
             glob.glob(
-                os.path.join("../../Matterport/data/hab2_bench_assets/stages_uncompressed/*.glb")
+                os.path.join("../Matterport/data/hab2_bench_assets/stages_uncompressed/*.glb")
             )
         )
     )
@@ -80,7 +80,7 @@ def load_ReplicaCAD(builder):
 
 
 def load_Matterport(builder):
-    paths = sorted(list(glob.glob(os.path.join("../../Matterport/data/matterport3d/*.glb"))))
+    paths = sorted(list(glob.glob(os.path.join("../Matterport/data/matterport3d/*.glb"))))
     path = random.choice(paths)
     pose = Pose(q=[0, 0, 0, 1])  # y-axis up for Matterport scenes
     builder.add_visual_from_file(path, pose)
